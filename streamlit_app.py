@@ -37,5 +37,7 @@ s.dataframe(fruityvice_normalized)
 import snowflake.connector
 
 s.header("The Fruit load list contains:")
+
+s.datafame(my_fruit_list)
 add_my_fruit = s.text_input('What fruit would you like to add?','jackfruit')
 s.write('Thanks for adding', add_my_fruit)
