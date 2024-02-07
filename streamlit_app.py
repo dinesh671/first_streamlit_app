@@ -46,7 +46,7 @@ streamlit.text(my_data_row)
 streamlit.header("The Fruit load list contains:")
 
 # streamlit.datafame(my_fruit_list)
-mycur.execute("select * from pc_rivery_db.public.fruit_load_list")
+my_cur.execute("select * from pc_rivery_db.public.fruit_load_list;")
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding', add_my_fruit)
