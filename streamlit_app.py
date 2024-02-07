@@ -36,15 +36,15 @@ s.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_data_row = my_cur.fetchone()
-s.text("Hello from Snowflake:")
-s.text(my_data_row)
+# my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+# my_cur = my_cnx.cursor()
+# my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
+# my_data_row = my_cur.fetchone()
+# s.text("Hello from Snowflake:")
+# s.text(my_data_row)
 
 s.header("The Fruit load list contains:")
 
-# s.datafame(my_fruit_list)
-# add_my_fruit = s.text_input('What fruit would you like to add?','jackfruit')
-# s.write('Thanks for adding', add_my_fruit)
+s.datafame(my_fruit_list)
+add_my_fruit = s.text_input('What fruit would you like to add?','jackfruit')
+s.write('Thanks for adding', add_my_fruit)
