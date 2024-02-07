@@ -34,7 +34,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_cho
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 s.dataframe(fruityvice_normalized)
 
-import snowflake.connector
+import snowflake-connector-python as snowflake
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 # my_cur = my_cnx.cursor()
