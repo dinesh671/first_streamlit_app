@@ -49,6 +49,6 @@ streamlit.header("The Fruit load list contains:")
 # my_cur.execute("")
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
-my_cur.execute(f'INSERT INTO pc_rivery_db.public.fruit_load_list (fruit_column) VALUES (\'{add_my_fruit}\')')
+my_cur.execute(f'INSERT INTO pc_rivery_db.public.fruit_load_list VALUES (\'{add_my_fruit}\')')
 streamlit.write('Thanks for adding', add_my_fruit)
 
