@@ -48,5 +48,5 @@ streamlit.header("The Fruit load list contains:")
 # streamlit.datafame(my_fruit_list)
 # my_cur.execute("")
 
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 streamlit.write('Thanks for adding', add_my_fruit)
